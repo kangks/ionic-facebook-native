@@ -2,6 +2,7 @@
 
 # Dependencies
 * https://github.com/Wizcorp/phonegap-facebook-plugin
+* https://github.com/patnolanireland/cordova-facebook-connect-plugin
 
 # Steps
 * install Ionic libraries with a blank template

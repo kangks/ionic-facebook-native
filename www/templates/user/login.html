@@ -1,0 +1,33 @@
+<ion-view title="Login" hide-back-button="true">
+  <ion-content padding="true" class="has-header">
+    <form>
+      <ion-list>
+        <label class="item item-input">
+          <span class="input-label">Username</span>
+          <input type="text" placeholder="" ng-model="creds.username">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="" ng-model="creds.password">
+        </label>
+      </ion-list>
+      <div class="spacer" style="height: 40px;"></div>
+      <a ng-click="doLoginAction()" class="button button-stable button-block">Log in</a>
+      <a ui-sref='auth-signup' class="button button-positive button-clear button-block">Or create an account</a>
+    </form>
+
+    <!-- Social Login -->
+    <div class="social-login">
+      <h6 class="divider">Social Login</h6>
+      <div class="row">
+        <div class="col">
+          <a href="" class="button button-assertive button-borderless button-block no-margin"><i class="ion-social-google"></i> Gmail</a>
+        </div>
+        <div class="col">
+          <a href="" class="button button-positive button-borderless button-block no-margin" ng-click="facebookLogin()"><i class="ion-social-facebook"></i> Facebook</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Social Login -->
+  </ion-content>
+</ion-view>
